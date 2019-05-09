@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/tutorial.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>ASP.NET Core - TODO List</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-default navbar-fixed-top text-uppercase">
+            <img class="logo" src="../images/core2.0.png" alt="">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="../index.html" class="navbar-brand">C# Blog</a>
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Lessons
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="../lessons/attributes.html">Attributes</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Tutorials
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="./todoList.html">TODO List</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="../register.html">Register</a></li>
+                        <li><a href="../login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="text-center">
+        <div class="jumbotron">
+            <h2>TODO List using ASP.NET Core Mvc and .Net Core 2.2</h2>
+            <p>Today I will show you how to create a simple web application using c#!</p>
+            <p>Ok! Let's start! It will be fun!!!</p>
+        </div>
+        <div class="left border-right">
+            <section id="newProject">
+                <div class="panel panel-info">
+                    <div class="panel-heading">Create new Project in Visual Studio</div>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">Open Visul Studio 2017</li>
+                        <li class="list-group-item">Go to File -> New Project</li>
+                        <li class="list-group-item">Choose .NET Core</li>
+                        <li class="list-group-item">Change authentication to individual user accounts</li>
+                    </ul>
+                </div>
+
+                <div class="imgHolder">
+                    <figure>
+                        <img src="./images/createProject.png" alt="Create Project">
+                    </figure>
+                    <figure>
+                        <img src="./images/mvcProject.png" alt="MVC New Project">
+                    </figure>
+                </div>
+                <p>
+                    Now we have new project with authentication out of the box!
+                    We can login and register now! Try the functionality and let's continue then!
+                </p>
+            </section>
+        </div>
+        <div class="right">
+            <div class="panel panel-info">
+                <div class="panel-heading">Configure database</div>
+                <ul class="list-group">
+                    <li class="list-group-item"> Open appsettings json file in the root folder and change the connection
+                        string!</li>
+                    <li class="list-group-item">Then in folder Data create new folder Models and in it create class
+                        Task.</li>
+                </ul>
+            </div>
+
+            <section id="dbSetUp">
+                <div class="imgHolder">
+                    <figure>
+                        <img src="./images/taskModelImage.png" alt="Task Model">
+                    </figure>
+                    <figure>
+                        <img src="images/dbContext.png" alt="Db Context Class">
+                    </figure>
+                </div>
+                <div id="paskageManager">
+                    <p class="text-left">
+                        Open Paskage Manager Console and press the folowing commadnds:
+                    </p>
+
+                    <ol class="text-left">
+                        <li>add-migration AddTaskEntity</li>
+                        <li>update-database</li>
+                    </ol>
+                </div>
+                <p class="text-left">
+                    Now we have our database created! Open SSMS and see if everything is OK!!!
+                </p>
+            </section>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"
+                style="width: 5%;">
+                5%
+            </div>
+        </div>
+        <footer>
+            <nav>
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="./todoList.html">1</a></li>
+                    <li><a href="./todoListModels.html">2</a></li>
+                    <li><a href="./todoListService.html">3</a></li>
+                    <li><a href="./todoListControllers.html">4</a></li>
+                    <li><a href="./todoListViews.html">5</a></li>
+                    <li><a href="./todoListJs.html">6</a></li>
+                    <li><a href="./todoListPages.html">7</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
+    <footer>
+        <button id="scroll">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <p>
+            All rights reserved. Author: Atanas Vasilev -
+            <a href="https://www.abv.bg/">nasko01_vasilev@abv.bg</a>
+        </p>
+    </footer>
+</body>
+<script src="../scripts/jquery-3.3.1.js"></script>
+<script src="../scripts/bootstrap.js"></script>
+<script src="./scripts/carousel.js"></script>
+
+</html>

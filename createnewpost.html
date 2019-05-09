@@ -1,80 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>SoftUni Blog</title>
+    <title>C# Blog</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/jquery-3.3.1.js"></script>
-    <script src="scripts/bootstrap.js"></script>
 </head>
-<body>
-<header>
-    <div class="navbar navbar-default navbar-fixed-top text-uppercase">
-        <div class="container">
-            <div class="navbar-header">
-                <a href="index.html" class="navbar-brand">SoftUni Blog</a>
 
-                <button type="button" class="navbar-toggle"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Welcome</a></li>
-                    <li><a href="createnewpost.html">New Post</a></li>
-                    <li><a href="index.html">Logout</a></li>
-                </ul>
+<body>
+    <header>
+        <div class="navbar navbar-default navbar-fixed-top text-uppercase">
+            <img class="logo" src="./images/core2.0.png" alt="">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">C# Blog</a>
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Welcome</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Lessons
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="./lessons/attributes.html">Attributes</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Tutorials
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="./tutorials/todoList.html">TODO List</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="createnewpost.html">New Post</a></li>
+                        <li><a href="index.html">Logout</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<main>
-    <div class="container body-content span=8 offset=2">
-        <form class="form-horizontal">
-            <fieldset>
-                <legend>New Post</legend>
-                <div class="form-group">
-                    <label class="col-sm-4 control-label">Post Title</label>
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" id="postTitle" placeholder="Please enter post title">
+    <main>
+        <div class="container body-content span=8 offset=2">
+            <form class="form-horizontal">
+                <fieldset>
+                    <legend class="text-center">New Post</legend>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Post Title</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="postTitle"
+                                placeholder="Please enter post title">
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label class="col-sm-4 control-label">Author</label>
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" id="postAuthor" placeholder="Please enter author name">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Author</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="postAuthor"
+                                placeholder="Please enter author name">
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label class="col-sm-4 control-label">Content</label>
-                    <div class="col-sm-6">
-                        <textarea class="form-control" rows="5" id="postContent"></textarea>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Content</label>
+                        <div class="col-sm-6">
+                            <textarea class="form-control" rows="5" id="postContent"></textarea>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <div class="col-sm-4 col-sm-offset-4">
-                        <a href="indexlogged.html" class="btn btn-default">Cancel</a>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-4">
+                            <a href="indexlogged.html" class="btn btn-default">Cancel</a>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
                     </div>
-                </div>
-            </fieldset>
-        </form>
+                </fieldset>
+            </form>
 
-    </div>
-</main>
-
-<footer>
-    <div class="container modal-footer">
-        <p>&copy; Tech Module SoftUni May 2018</p>
-    </div>
-</footer>
+        </div>
+    </main>
+    <footer class="fixed-footer">
+        <button id="scroll">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <p>
+                All rights reserved. Author: Atanas Vasilev -
+            <a href="https://www.abv.bg/">nasko01_vasilev@abv.bg</a>
+        </p>
+    </footer>
 </body>
+<script src="scripts/jquery-3.3.1.js"></script>
+<script src="scripts/bootstrap.js"></script>
+
 </html>

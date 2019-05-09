@@ -1,0 +1,23 @@
+.mt-20{
+    margin-top: 20px; 
+}
+
+
+#attributes{
+    width: 960px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+#attributes > thead > tr#tableHead{
+    background-color:#84dac6;
+}
+
+#attributes tr:nth-child(n){
+    background-color: #c8e2d4; 
+}
+
+#attributes tr:nth-child(2n + 1){
+    background-color: #ebebf3
+}
+

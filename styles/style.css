@@ -1,43 +1,101 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");
-/*!
- * bootswatch v3.3.7
- * Homepage: http://bootswatch.com
- * Copyright 2012-2016 Thomas Park
- * Licensed under MIT
- * Based on Bootstrap
-*/
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Verdana:400,700,400italic");
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
 
 body {
     padding-top: 70px;
-    padding-bottom: 20px;
 }
 
-/* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
+/* Font awesome icons css */
+.icon-container i{
+    position: absolute;
+    top: 13px;
+    left: 30px;
+    font-size: 20px;
+}
+
+/* Footer css */
+body > footer{
+    background-color: #2C3E50;
+    margin-top: 30px;
+}
+
+.fixed-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+body > footer p{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    margin: 0;
+}
+
+#scroll{
+    background: none;
+    border: none;
+    outline: none;
+    color: blanchedalmond;
+    font-size: 30px; 
+    float: right;
+    margin-top: 18px;
+    margin-right: 50px;
+}
+
+.icon-container input{
+    padding-left: 40px;
+}
+
+
+form select option{
+    font-size: 18px;
+}
+
+/* Logo css */
+.logo{
+  width: 107px;
+  float: left;
+  margin-right: 30px;
+}
+
+/* Drop down menu css */
+#dropdownMenu1{
+    background: none;
+    border: none;
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-size: 18px;
+    outline: none;
+}
+
+div.navbar-collapse.collapse > ul > li:nth-child(1) > div > ul > li > a{
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+div.navbar-collapse.collapse > ul > li:nth-child(1) > div > ul > li > a:hover{
+    background: beige;
+}
+
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
 }
-
 
 html {
   font-family: sans-serif;
@@ -222,7 +280,7 @@ td,
 th {
   padding: 0;
 }
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
 @media print {
   *,
   *:before,
@@ -1114,7 +1172,7 @@ html {
 }
 body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.42857143;
   color: #2c3e50;
   background-color: #ffffff;
@@ -5156,7 +5214,7 @@ a.thumbnail.active {
   overflow: hidden;
   height: 21px;
   margin-bottom: 21px;
-  background-color: #ecf0f1;
+  background-color: #c9dec7;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -5488,7 +5546,6 @@ button.list-group-item-danger.active:focus {
   padding: 15px;
 }
 .panel-heading {
-  padding: 10px 15px;
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
@@ -5499,7 +5556,7 @@ button.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 17px;
+  font-size: 30px;
   color: inherit;
 }
 .panel-title > a,
@@ -6997,13 +7054,13 @@ input:focus {
   text-decoration: underline;
 }
 .progress {
-  height: 10px;
+  height: 30px;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 .progress .progress-bar {
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 25px;
+  line-height: 25px;
 }
 .well {
   -webkit-box-shadow: none;

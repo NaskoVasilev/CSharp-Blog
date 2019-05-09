@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="./styles/lesson.css">
+    <title>ASP.NET Core - TODO List</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-default navbar-fixed-top text-uppercase">
+            <img class="logo" src="../images/core2.0.png" alt="">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="../index.html" class="navbar-brand">C# Blog</a>
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Lessons
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="./attributes.html">Attributes</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Tutorials
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="../tutorials/todoList.html">TODO List</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="../register.html">Register</a></li>
+                        <li><a href="../login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="text-center">
+        <div class="table-responsive">
+            <legend class="mt-20">ASP.Net Core Model Validation attributes</legend>
+            <table class="table table-bordered" id="attributes">
+                <thead>
+                    <tr id="tableHead">
+                        <th>Name</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CreditCard</td>
+                        <td>Validates that the property has a credit card format</td>
+                    </tr>
+                    <tr>
+                        <td>Compare</td>
+                        <td>Validates that two properties in a model match</td>
+                    </tr>
+                    <tr>
+                        <td>EmailAddress</td>
+                        <td>Validates that the property has an email format</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>Validates that the property has a telephone number format</td>
+                    </tr>
+                    <tr>
+                        <td>Range</td>
+                        <td>Validates that the property value falls within a specified range</td>
+                    </tr>
+                    <tr>
+                        <td>RegularExpression</td>
+                        <td>Validates that the property value matches a specified regular expression</td>
+                    </tr>
+                    <tr>
+                        <td>Required</td>
+                        <td>Validates that the field is not null. See [Required] attribute for details about this
+                            attribute's behavior.</td>
+                    </tr>
+                    <tr>
+                        <td>StringLength</td>
+                        <td>Validates that a string property value doesn't exceed a specified length limit</td>
+                    </tr>
+                    <tr>
+                        <td>Url</td>
+                        <td>Validates that the property has a URL format.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="mt-20 fixed-footer">
+        <button id="scroll">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <p>
+            Author: Atanas Vasilev -
+            <a href="https://www.abv.bg/">nasko01_vasilev@abv.bg</a>
+        </p>
+    </footer>
+</body>
+<script src="../scripts/jquery-3.3.1.js"></script>
+<script src="../scripts/bootstrap.js"></script>
+<script src="./scripts/carousel.js"></script>
+
+</html>
